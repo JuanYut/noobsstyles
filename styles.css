@@ -41,15 +41,10 @@ body {
   color: var(--black);
 }
 
-/* Center All */
-.all-center {
-  display: flex;
-  flex-direction: column;
+/* Utilities ---------------------------------------------------------------------------- */
+/* Width 100% */
+.w100 {
   width: 100%;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 /* Container */
 .container {
@@ -58,7 +53,50 @@ body {
   overflow: hidden;
   padding: 0 2rem;
 }
-/* Section */
+/* Shadow */
+.shadow {
+  box-shadow: 0 10px 5px -10px #000;
+}
+/* Round Image */
+.round-img {
+  border-radius: 50%;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.txt-center {
+  text-align: center;
+}
+.txt-right {
+  text-align: right;
+}
+.txt-left {
+  text-align: left;
+}
+/* Center ------------------------------------------------------------------------------- */
+.center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* Center Col */
+.center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Center Row */
+.center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Section ------------------------------------------------------------------------------ */
 .section {
   padding: 1rem;
   margin: 0.7rem 0;
@@ -73,20 +111,46 @@ body {
   border-radius: 2.5%;
   margin: 0.7rem 0;
 }
-/* Shadow */
-.shadow {
-  box-shadow: 0 10px 5px -10px #000;
+/* Margin ------------------------------------------------------------------------------- */
+.m {
+  margin: 0.5rem;
 }
-/* Round Image */
-.round-img {
-  border-radius: 50%;
+.m-1 {
+  margin: 1rem;
 }
-/* Tag a */
-a {
-  text-decoration: none;
-  color: var(--black);
+.m-2 {
+  margin: 2rem;
 }
-/* Grid */
+.m-3 {
+  margin: 3rem;
+}
+/* Margin Vertical: Y */
+.my {
+  margin: 0.5rem 0;
+}
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+/* Margin Horizontal: X */
+.mx {
+  margin: 0 0.5rem;
+}
+.mx-1 {
+  margin: 0 1rem;
+}
+.mx-2 {
+  margin: 0 2rem;
+}
+.mx-3 {
+  margin: 0 3rem;
+}
+/* Grid --------------------------------------------------------------------------------- */
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -110,12 +174,12 @@ a {
 .btn-red,
 .btn-yellow,
 .btn-grey,
-.btn-radius,
-.btn-radius-blue,
-.btn-radius-green,
-.btn-radius-red,
-.btn-radius-yellow,
-.btn-radius-grey,
+.btn-round,
+.btn-round-blue,
+.btn-round-green,
+.btn-round-red,
+.btn-round-yellow,
+.btn-round-grey,
 .btn-lines,
 .btn-lines-blue,
 .btn-lines-green,
@@ -131,13 +195,13 @@ a {
   cursor: pointer;
   outline: none;
 }
-/* btn-radius */
-.btn-radius,
-.btn-radius-blue,
-.btn-radius-green,
-.btn-radius-red,
-.btn-radius-yellow,
-.btn-radius-grey {
+/* btn-round */
+.btn-round,
+.btn-round-blue,
+.btn-round-green,
+.btn-round-red,
+.btn-round-yellow,
+.btn-round-grey {
   border-radius: 5px;
 }
 /* btn-lines */
@@ -153,32 +217,32 @@ a {
 }
 /* Default Hover */
 .btn:hover,
-.btn-radius:hover,
+.btn-round:hover,
 .btn-lines:hover {
   background-color: var(--blue-dark);
   color: var(--white);
   border-color: var(--blue);
 }
 /* Colors Buttons*/
-/* btn & btn-radius*/
+/* btn & btn-round*/
 .btn-blue,
-.btn-radius-blue {
+.btn-round-blue {
   background-color: var(--blue);
 }
 .btn-green,
-.btn-radius-green {
+.btn-round-green {
   background-color: var(--green);
 }
 .btn-red,
-.btn-radius-red {
+.btn-round-red {
   background-color: var(--red);
 }
 .btn-yellow,
-.btn-radius-yellow {
+.btn-round-yellow {
   background-color: var(--yellow);
 }
 .btn-grey,
-.btn-radius-grey {
+.btn-round-grey {
   background-color: var(--grey);
 }
 /* btn-lines */
@@ -202,33 +266,33 @@ a {
   border-color: var(--grey);
   color: var(--grey);
 }
-/* btn:hover, btn-radius:hover & btn-lines:hover */
+/* btn:hover, btn-round:hover & btn-lines:hover */
 .btn-blue:hover,
-.btn-radius-blue:hover,
+.btn-round-blue:hover,
 .btn-lines-blue:hover {
   background-color: var(--blue-dark);
   color: var(--white);
 }
 .btn-green:hover,
-.btn-radius-green:hover,
+.btn-round-green:hover,
 .btn-lines-green:hover {
   background-color: var(--green-dark);
   color: var(--white);
 }
 .btn-red:hover,
-.btn-radius-red:hover,
+.btn-round-red:hover,
 .btn-lines-red:hover {
   background-color: var(--red-dark);
   color: var(--white);
 }
 .btn-yellow:hover,
-.btn-radius-yellow:hover,
+.btn-round-yellow:hover,
 .btn-lines-yellow:hover {
   background-color: var(--yellow-dark);
   color: var(--white);
 }
 .btn-grey:hover,
-.btn-radius-grey:hover,
+.btn-round-grey:hover,
 .btn-lines-grey:hover {
   background-color: var(--grey-dark);
   color: var(--white);
