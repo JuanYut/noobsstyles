@@ -41,7 +41,7 @@ body {
   color: var(--black);
 }
 
-/* Buttons */
+/* Buttons ------------------------------------------------------------------------------ */
 .btn,
 .btn-blue,
 .btn-green,
@@ -170,3 +170,4 @@ body {
   background-color: var(--grey-dark);
   color: var(--white);
 }
+/* Buttons END -------------------------------------------------------------------------- */
