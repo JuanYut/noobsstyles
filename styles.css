@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Global Variables */
+/* Nomenclatura: element-mode */
+:root {
+  --blue-light: #64b5f6;
+  --blue: #2196f3;
+  --blue-dark: #1976d2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: white;
+  color: black;
+}
