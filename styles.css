@@ -174,18 +174,24 @@ body {
 .btn-red,
 .btn-yellow,
 .btn-grey,
+.btn-black,
+.btn-white,
 .btn-round,
 .btn-round-blue,
 .btn-round-green,
 .btn-round-red,
 .btn-round-yellow,
 .btn-round-grey,
+.btn-round-black,
+.btn-round-white,
 .btn-lines,
 .btn-lines-blue,
 .btn-lines-green,
 .btn-lines-red,
 .btn-lines-yellow,
-.btn-lines-grey {
+.btn-lines-grey,
+.btn-lines-black,
+.btn-lines-white {
   display: inline-block;
   background-color: var(--blue);
   color: var(--white);
@@ -201,7 +207,9 @@ body {
 .btn-round-green,
 .btn-round-red,
 .btn-round-yellow,
-.btn-round-grey {
+.btn-round-grey,
+.btn-round-black,
+.btn-round-white {
   border-radius: 5px;
 }
 /* btn-lines */
@@ -210,7 +218,9 @@ body {
 .btn-lines-green,
 .btn-lines-red,
 .btn-lines-yellow,
-.btn-lines-grey {
+.btn-lines-grey,
+.btn-lines-black,
+.btn-lines-white {
   background-color: rgba(255, 255, 255, 0);
   color: var(--blue);
   border: solid 0.1rem;
@@ -245,6 +255,15 @@ body {
 .btn-round-grey {
   background-color: var(--grey);
 }
+.btn-black,
+.btn-round-black {
+  background-color: var(--black);
+}
+.btn-white,
+.btn-round-white {
+  background-color: var(--white);
+  color: var(--black);
+}
 /* btn-lines */
 .btn-lines-blue {
   border-color: var(--blue);
@@ -265,6 +284,14 @@ body {
 .btn-lines-grey {
   border-color: var(--grey);
   color: var(--grey);
+}
+.btn-lines-black {
+  border-color: var(--black);
+  color: var(--black);
+}
+.btn-lines-white {
+  border-color: var(--white);
+  color: var(--white);
 }
 /* btn:hover, btn-round:hover & btn-lines:hover */
 .btn-blue:hover,
@@ -295,6 +322,18 @@ body {
 .btn-round-grey:hover,
 .btn-lines-grey:hover {
   background-color: var(--grey-dark);
+  color: var(--white);
+}
+.btn-black:hover,
+.btn-round-black:hover,
+.btn-lines-white:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+.btn-white:hover,
+.btn-round-white:hover,
+.btn-lines-black:hover {
+  background-color: var(--black);
   color: var(--white);
 }
 /* Buttons END -------------------------------------------------------------------------- */
